@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IPyVolume Widget</title>
+    
+</head>
+<body>
+
+
+<link href="js/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">    
+<script src="js/require.min.v2.3.4.js"  data-main='./js/' ></script>
+<script>
+    require.config({
+      map: {
+        '*': {
+          'ipyvolume': 'js/index.js',
+        }
+      }})
+</script>
+
+<script src="js/embed-amd_v0.11.0.js"></script>
+<script type="application/vnd.jupyter.widget-state+json">
+{
+  "version_major": 2,
+  "version_minor": 0,
+  "state": {
+    "72d533a3460f408b8660e863e1d7b37e": {
+      "model_name": "FigureModel",
+      "model_module": "ipyvolume",
+      "model_module_version": "~0.4.5",
+      "state": {
+        "_dom_classes": [],
+        "_model_module": "ipyvolume",
+        "_model_module_version": "~0.4.5",
+        "_model_name": "FigureModel",
+        "_view_count": null,
+        "_view_module": "ipyvolume",
+        "_view_module_version": "~0.4.5",
+        "_view_name": "FigureView",
+        "ambient_coefficient": 0.5,
+        "angle_order": "XYZ",
+        "anglex": 0.0,
+        "angley": 0.0,
+        "anglez": 0.0,
+        "animation": 1000.0,
+        "animation_exponent": 0.5,
+        "camera_center": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "camera_control": "trackball",
+        "camera_fov": 45.0,
+        "data_max": 0.0,
+        "data_min": 0.0,
+        "diffuse_coefficient": 0.8,
+        "downscale": 1,
+        "extent": null,
+        "eye_separation": 6.4,
+        "height": 500,
+        "layout": "IPY_MODEL_579b4090fb304b8795683cc439f8d919",
+        "matrix_projection": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "matrix_world": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "meshes": [],
+        "render_continuous": false,
+        "scatters": [
+          "IPY_MODEL_abdf18145a6a46db9bc1128097a5b4d0"
+        ],
+        "selection_mode": "replace",
+        "selector": "lasso",
+        "show": "Volume",
+        "specular_coefficient": 0.5,
+        "specular_exponent": 5.0,
+        "stereo": false,
+        "style": {
+          "axes": {
+            "visible": true,
+            "label": {
+              "color": "black"
+            },
+            "ticklabel": {
+              "color": "black"
+            },
+            "color": "black"
+          },
+          "box": {
+            "visible": true
+          },
+          "background-color": "white"
+        },
+        "tf": null,
+        "volume_data": null,
+        "width": 400,
+        "xlabel": "x",
+        "xlim": [
+          0.0,
+          1.0
+        ],
+        "ylabel": "y",
+        "ylim": [
+          0.0,
+          1.0
+        ],
+        "zlabel": "z",
+        "zlim": [
+          0.0,
+          1.0
+        ]
+      }
+    },
+    "579b4090fb304b8795683cc439f8d919": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.0.0",
+      "state": {
+        "_model_module": "@jupyter-widgets/base",
+        "_model_module_version": "1.0.0",
+        "_model_name": "LayoutModel",
+        "_view_count": null,
+        "_view_module": "@jupyter-widgets/base",
+        "_view_module_version": "1.0.0",
+        "_view_name": "LayoutView",
+        "align_content": null,
+        "align_items": null,
+        "align_self": null,
+        "border": null,
+        "bottom": null,
+        "display": null,
+        "flex": null,
+        "flex_flow": null,
+        "height": null,
+        "justify_content": null,
+        "left": null,
+        "margin": null,
+        "max_height": null,
+        "max_width": null,
+        "min_height": null,
+        "min_width": null,
+        "order": null,
+        "overflow": null,
+        "overflow_x": null,
+        "overflow_y": null,
+        "padding": null,
+        "right": null,
+        "top": null,
+        "visibility": null,
+        "width": null
+      }
+    },
+    "abdf18145a6a46db9bc1128097a5b4d0": {
+      "model_name": "ScatterModel",
+      "model_module": "ipyvolume",
+      "model_module_version": "~0.4.5",
+      "state": {
+        "_dom_classes": [],
+        "_model_module": "ipyvolume",
+        "_model_module_version": "~0.4.5",
+        "_model_name": "ScatterModel",
+        "_view_count": null,
+        "_view_module": "ipyvolume",
+        "_view_module_version": "~0.4.5",
+        "_view_name": "ScatterView",
+        "color": [
+          {
+            "dtype": "float32",
+            "shape": [
+              300
+            ]
+          }
+        ],
+        "color_selected": "white",
+        "connected": false,
+        "geo": "diamond",
+        "sprite": true,
+        "layout": "IPY_MODEL_d0b6bfcc07aa424bbcd96a86d50705c0",
+        "selected": null,
+        "sequence_index": 0,
+        "size": 1,
+        "size_selected": 2.6,
+        "visible": true,
+        "visible_lines": false,
+        "visible_markers": true,
+        "vx": null,
+        "vy": null,
+        "vz": null,
+        "x": [
+          {
+            "dtype": "float32",
+            "shape": [
+              100
+            ]
+          }
+        ],
+        "y": [
+          {
+            "dtype": "float32",
+            "shape": [
+              100
+            ]
+          }
+        ],
+        "z": [
+          {
+            "dtype": "float32",
+            "shape": [
+              100
+            ]
+          }
+        ]
+      },
+      "buffers": [
+        {
+          "encoding": "base64",
+          "path": [
+            "color",
+            0,
+            "buffer"
+          ],
+          "data": "I0ZKPyNGSj8jRko/LIDrPiyA6z4sgOs+jCiRPYwokT2MKJE9qnTtPqp07T6qdO0+e71lP3u9ZT97vWU/0xetPNMXrTzTF608rB9LPawfSz2sH0s9Eqs6PxKrOj8Sqzo/d1FFP3dRRT93UUU/ZNJLP2TSSz9k0ks/UWksP1FpLD9RaSw/XlodP15aHT9eWh0/jQ8uP40PLj+NDy4/Fd5JPxXeST8V3kk/FarIPRWqyD0Vqsg9hdMqP4XTKj+F0yo/tEwIP7RMCD+0TAg/z61yP8+tcj/PrXI/o2/xPqNv8T6jb/E+fXdLP313Sz99d0s/vmpwP75qcD++anA/ACttPwArbT8AK20/E9pMPxPaTD8T2kw/8bF4P/GxeD/xsXg/sZZ3P7GWdz+xlnc/t4RQP7eEUD+3hFA/tPBtPbTwbT208G09LJTkPiyU5D4slOQ+Q8eRPkPHkT5Dx5E+bYDlPW2A5T1tgOU9/LEzPvyxMz78sTM+FHODPhRzgz4Uc4M+22C4PttguD7bYLg+4xnHPuMZxz7jGcc+bLRYP2y0WD9stFg/tm5+P7Zufj+2bn4/7SFPP+0hTz/tIU8/tQpNPrUKTT61Ck0+qY4kP6mOJD+pjiQ/gnZNP4J2TT+Cdk0/yR1gP8kdYD/JHWA/+JClPviQpT74kKU+wuI3P8LiNz/C4jc/VxwKPlccCj5XHAo+Vd7dPlXe3T5V3t0+JP1NPyT9TT8k/U0/cpxNP3KcTT9ynE0/cwQ5PnMEOT5zBDk+tbjLPrW4yz61uMs+OVZ/PzlWfz85Vn8/pfwnP6X8Jz+l/Cc/wPaVPsD2lT7A9pU+hX8vP4V/Lz+Ffy8/KH5JPyh+ST8ofkk/nH2zPpx9sz6cfbM+IjsQPyI7ED8iOxA/4wiYPuMImD7jCJg+GzPHPhszxz4bM8c+WdhZP1nYWT9Z2Fk/4hahPeIWoT3iFqE9Zz4aP2c+Gj9nPho/UrYqP1K2Kj9Stio/6dBiP+nQYj/p0GI/AYNfPwGDXz8Bg18/MbhxPzG4cT8xuHE/+0lxP/tJcT/7SXE/YaoeP2GqHj9hqh4/F4SkPheEpD4XhKQ+LfX5Pi31+T4t9fk+PGA9PzxgPT88YD0/7RtLP+0bSz/tG0s/mnvnPJp75zyae+c8iu/7Porv+z6K7/s+AUqAPgFKgD4BSoA+1A8jP9QPIz/UDyM/FBh9PxQYfT8UGH0/VNlbPlTZWz5U2Vs+8Qu7PvELuz7xC7s+hqkyPoapMj6GqTI+hkh7P4ZIez+GSHs/YVh8PWFYfD1hWHw9dF9kP3RfZD90X2Q/ki05P5ItOT+SLTk/LFAtPixQLT4sUC0+LEdpPixHaT4sR2k+Ci8nPwovJz8KLyc/odjNPaHYzT2h2M090TofP9E6Hz/ROh8/BwPgPQcD4D0HA+A90BF+P9ARfj/QEX4/3vlcP975XD/e+Vw/gGhzP4Bocz+AaHM//+wwPv/sMD7/7DA+oasOP6GrDj+hqw4/WAhNPlgITT5YCE0+CM9FPwjPRT8Iz0U/I0oYPyNKGD8jShg/nwA5P58AOT+fADk/rREdPa0RHT2tER094BLJPuASyT7gEsk+"
+        },
+        {
+          "encoding": "base64",
+          "path": [
+            "x",
+            0,
+            "buffer"
+          ],
+          "data": "6eInPjP2JD1D278+Zla2PgZBbT/pmGQ/E2p4PgZm0D44BHc+olhYPYlRDj8wLP08z4l4P+asCT+mv6c+mQoPP0qjZj6YNh4/qIlLPyeGHT6csUE/zuGVPl4DED+bMlM/H8U1P5n0yD41NyY/6ZlnP3VjAz8q7gA/oKNHP7aRIj7ayxA+6TyBPsgmTD8b6Ug/wF7JPpGMRj+glpg+mApKP17Apj6UFhc/GwhCPs2lPj6BHyM/L54iPv9dDj9/mFc/gs4cPxgaWT7rDfY+dfIQPH9w6z0SXvA+50ydPsQO0D5UViY/VyvgPhNhyj6ttL4+NtfKPSCKQj9asPI+nSVUPkGdYT9qAns+89rSPsYIlj7QImE/pyN/P9M4Hzy1qDw/bojmOgBrdj+8Uyo/HHZiP5sDNz9DP14+f8hpPy0tkj4cvic/EM1aP+buJj5AytI+42oePnTKKT5Bm1s/4pwlPo1Rwz2N7KE9Z1QDPz0ENT9RdzY/7ZZvP6Gi6z5dZHE/lv+WPiWaaT8+u3I/EjlSPw=="
+        },
+        {
+          "encoding": "base64",
+          "path": [
+            "y",
+            0,
+            "buffer"
+          ],
+          "data": "BsQbP44e0zzRBos+NQexPkGd2T4l7GU//NI2P1/8vj6iE+A+JAqWPjrS9T1Dals+hPtyP6C7UT/f0RA/eR9lPXUICj/BYyc/DITaPlFpYj84AAI/jiAsP6cF6j7t2Iw+XYvBPlb8OD0NuGs/7cp5P4t6Qz+mzvQ+uShoP6gyLz74Zsk+ahuLPnZv4Dy1FSM+fAoYPu/SMz8jTHc/zxYpP4HCbz33Mqg+tNZPPzLJYT9xHJ890j/+PnEBgT4zmhk/SCjrPsi09D1sD0s+kIsXP9Ho2j4pO889HYUxP/iETT9bFnU/kj0tPlQvYD8XEDQ+Xy9vP1X3xz5B4Ws/LeRSPx3tTz8XRy4/bJPDPkvNpD4v8Dc9I+9fP0XkbT/LBaY+elqoPX9loD7bInU9CjWEPrTafD0z4NA+ZBJwP/VTMT5BgHQ/tt0bPs+Zyj3qXS8/+r07P2jbHT9O8kI9YjkDPysvbj/JFik/s+l9PxkzcD/rHV0/jXJLPzvJ2j00uDs+X6odP+MCMj9CKuk+IApwPg=="
+        },
+        {
+          "encoding": "base64",
+          "path": [
+            "z",
+            0,
+            "buffer"
+          ],
+          "data": "I0ZKPyyA6z6MKJE9qnTtPnu9ZT/TF608rB9LPRKrOj93UUU/ZNJLP1FpLD9eWh0/jQ8uPxXeST8Vqsg9hdMqP7RMCD/PrXI/o2/xPn13Sz++anA/ACttPxPaTD/xsXg/sZZ3P7eEUD+08G09LJTkPkPHkT5tgOU9/LEzPhRzgz7bYLg+4xnHPmy0WD+2bn4/7SFPP7UKTT6pjiQ/gnZNP8kdYD/4kKU+wuI3P1ccCj5V3t0+JP1NP3KcTT9zBDk+tbjLPjlWfz+l/Cc/wPaVPoV/Lz8ofkk/nH2zPiI7ED/jCJg+GzPHPlnYWT/iFqE9Zz4aP1K2Kj/p0GI/AYNfPzG4cT/7SXE/YaoePxeEpD4t9fk+PGA9P+0bSz+ae+c8iu/7PgFKgD7UDyM/FBh9P1TZWz7xC7s+hqkyPoZIez9hWHw9dF9kP5ItOT8sUC0+LEdpPgovJz+h2M090TofPwcD4D3QEX4/3vlcP4Bocz//7DA+oasOP1gITT4Iz0U/I0oYP58AOT+tER094BLJPg=="
+        }
+      ]
+    },
+    "d0b6bfcc07aa424bbcd96a86d50705c0": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.0.0",
+      "state": {
+        "_model_module": "@jupyter-widgets/base",
+        "_model_module_version": "1.0.0",
+        "_model_name": "LayoutModel",
+        "_view_count": null,
+        "_view_module": "@jupyter-widgets/base",
+        "_view_module_version": "1.0.0",
+        "_view_name": "LayoutView",
+        "align_content": null,
+        "align_items": null,
+        "align_self": null,
+        "border": null,
+        "bottom": null,
+        "display": null,
+        "flex": null,
+        "flex_flow": null,
+        "height": null,
+        "justify_content": null,
+        "left": null,
+        "margin": null,
+        "max_height": null,
+        "max_width": null,
+        "min_height": null,
+        "min_width": null,
+        "order": null,
+        "overflow": null,
+        "overflow_x": null,
+        "overflow_y": null,
+        "padding": null,
+        "right": null,
+        "top": null,
+        "visibility": null,
+        "width": null
+      }
+    }
+  }
+}
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "72d533a3460f408b8660e863e1d7b37e"}
+</script>
+
+        
+
+</body>
+</html>

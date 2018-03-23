@@ -42,20 +42,11 @@ var ScatterView = widgets.WidgetView.extend( {
                 this.geo_cat.faces.push(face)
             }
         }
-        this.geo_point_2d = new THREE.Geometry();
-        this.geo_point_2d.vertices.push(new THREE.Vector3(0, 0, 0));
-        this.geo_point_2d.vertices.push(new THREE.Vector3(1, 0, 0));
-        this.geo_point_2d.vertices.push(new THREE.Vector3(1, 1, 0));
-        this.geo_point_2d.vertices.push(new THREE.Vector3(0, 1, 0));
-        this.geo_point_2d.faces.push(new THREE.Face3(0, 1, 2));
-        this.geo_point_2d.faces.push(new THREE.Face3(0, 2, 3));
-        
+        this.geo_square_2d = new THREE.PlaneGeometry(2, 2, 1, 1)
+        this.geo_point_2d = new THREE.PlaneGeometry(0.1, 0.1, 1, 1)
         this.geo_tri_2d = new THREE.Geometry();
-        var y_centroid = 0.2357;
-        this.geo_tri_2d.vertices.push(new THREE.Vector3(0, y_centroid, 0));
-        this.geo_tri_2d.vertices.push(new THREE.Vector3(1, y_centroid, 0));
-        this.geo_tri_2d.vertices.push(new THREE.Vector3(0.5, 0.7071 + y_centroid, 0));
-        this.geo_tri_2d.faces.push(new THREE.Face3(0, 1, 2));
+        this.circle_2d = new THREE.CircleGeometry(1, 32, Math.PI/2);
+
         //this.geo = new THREE.ConeGeometry(0.2, 1)
         this.geo_arrow = new THREE.CylinderGeometry(0, 0.2, 1)
         this.geos = {
@@ -64,7 +55,9 @@ var ScatterView = widgets.WidgetView.extend( {
             arrow: this.geo_arrow,
             sphere: this.geo_sphere,
             cat: this.geo_cat,
+            square_2d: this.geo_square_2d,
             point_2d: this.geo_point_2d,
+            circle_2d: this.circle_2d,
             tri_2d: this.geo_tri_2d
         }
 
